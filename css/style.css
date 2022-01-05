@@ -1,0 +1,112 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 auto;
+  padding-left: 300px;
+}
+
+@media only screen and (max-width: 992px) {
+  main {
+    padding-left: 0;
+  }
+}
+
+.nav-wrapper {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+}
+
+.navbar-logo {
+  padding: 0;
+  display: flex;
+  line-height: 60px;
+  height: 60px;
+  width: 315px;
+}
+
+.navbar-logo a {
+  padding: 10px 5px;
+  display: flex;
+  height: 60px;
+  width: 250px;
+}
+
+.navbar-logo img {
+  vertical-align: middle;
+}
+/* lomslog-text는 img로 바꿀 예정입니다. */
+.navbar-logo span {
+  margin-left: 5px;
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 500;
+  vertical-align: middle;
+}
+
+.navbar-menu {
+  display: flex;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-menu a {
+  padding: 5px 10px;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 500;
+}
+/* navbar-search start */
+
+form#navbar-search {
+  width: 315px;
+}
+
+input.search-field {
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.54);
+  border-radius: 2px;
+  border: 1;
+  height: 36px;
+  padding: 8px 8px 8px 60px;
+  width: 250px;
+  background: #f7f7f7;
+  transition: background 0.2s, width 0.2s;
+}
+
+/* navbar-search end */
+
+/* sidenav - logo-wrapper and fix Sidenav */
+.sidenav {
+  margin-top: 64px;
+  /* sidenav margin */
+}
+
+.sidenav li > a {
+  padding: 0 32px !important;
+}
+
+.collapsible-body > ul > li > a {
+  padding: 0 48px !important;
+  font-weight: 400 !important;
+}
+/* sidebar - logo-wrapper */
+
+/* styles to fix Sidenav */

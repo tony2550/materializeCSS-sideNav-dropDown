@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!--Import materialize.css-->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="node_modules/materialize-css/dist/css/materialize.min.css"
+      media="screen,projection"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Vessel Info</title>
+  </head>
+  <body>
+    <nav class="nav-wrapper light-blue darken-4">
+      <div class="nav-wrapper-left">
+        <a class="logo-container" href="#">
+          <img class="lomslogo" src="image/barrel.png" width="40" height="40" />
+          <span class="lomslogo-text">LOMS</span>
+        </a>
+      </div>
+      <div class="nav-wrapper-center">
+        <a href="#">File</a>
+        <a href="#">Data</a>
+        <a href="#">Report</a>
+        <a href="#">Help</a>
+      </div>
+      <div class="nav-wrapper-search">
+        <form>
+          <div class="input-field">
+            <input
+              type="search"
+              id="search"
+              placeholder="Search Ship"
+              required
+            />
+            <label for="search" class="label-icon active">
+              <i class="material-icons">search</i>
+            </label>
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <!-- main container -->
+    <main>
+      <div class="row">
+        <!-- Fixed SideNav -->
+        <div class="col s2 light-blue darken-3 side-nav">
+          <div class="side-nav-left">
+            <ul>
+              <li>A</li>
+              <li>B</li>
+              <li>C</li>
+              <li>D</li>
+            </ul>
+          </div>
+          <div class="col s2 light-blue darken-3 side-nav">
+            <div class="side-nav-left">
+              <ul>
+                <li>A</li>
+                <li>B</li>
+                <li>C</li>
+                <li>D</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- content -->
+        <div class="col s10 grey lighten-2">
+          <nav class="">
+            <ul>
+              <li>Vessel Info</li>
+              <li>View Data</li>
+              <li>Chart1</li>
+              <li>Chart2</li>
+            </ul>
+          </nav>
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+        </div>
+      </div>
+    </main>
+    <!--JavaScript 적용-->
+    <script
+      type="text/javascript"
+      src="node_modules/materialize-css/dist/js/materialize.min.js"
+    ></script>
+  </body>
+</html>
